@@ -28,13 +28,13 @@ A simple method to test is a number is even or not. It returs true if number is 
 ## Odd Number
 > Test for Odd number
 
-    `public static boolean oddNumber(int a) {
+    public static boolean oddNumber(int a) {
         if (a > 0 && (a % 2) != 0) {
             return true;
         } else {
             return false;
         }
-    }`
+    }
   >The end of odd number test
   ***
     
