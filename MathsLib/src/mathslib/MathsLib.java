@@ -16,6 +16,7 @@ public class MathsLib {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        System.out.println("Try try try \n" + primeTest(2));
     }
 // Factorial of any n! = n∗(n−1)∗(n−2)∗(n−3)∗...3∗2∗1
 
@@ -27,7 +28,7 @@ public class MathsLib {
     }
     // Combination of any
 
-    //Test form Even number
+    //Even numbers
     public static boolean evenNumber(int a) {
         if (a > 0 && (a % 2) == 0) {
             return true;
@@ -36,13 +37,26 @@ public class MathsLib {
         }
     }
 
-    //Test for Odd number
+    //odd numbers
     public static boolean oddNumber(int a) {
         if (a > 0 && (a % 2) != 0) {
             return true;
         } else {
             return false;
         }
+    }
+
+    //check if any given number is a Prime Number
+    public static boolean primeTest(int n) {
+        if (n <= 1) {
+            return false;
+        }
+        for (int i = 2; i < Math.sqrt(n); i++) {
+            if (n % i == 0) {
+                return false;
+            }
+        }
+        return true;
     }
 
 }
