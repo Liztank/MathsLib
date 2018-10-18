@@ -10,3 +10,7 @@ Simple and short recursive function to calculate factorial of any given value us
         }
         return n * factorial(n - 1);
     }`
+> The end of Factorial function
+***
+
+## Even Number
