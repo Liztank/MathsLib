@@ -37,4 +37,20 @@ A simple method to test is a number is even or not. It returs true if number is 
     }
   >The end of odd number test
   ***
+  ## Prime Numbers
+  >A simple java method to test if any given number is a Prime numbers 
+  
+        public static boolean primeTest(int n) {
+           if (n <= 1) {
+              return false;
+          }
+           for (int i = 2; i < Math.sqrt(n); i++) {
+              if (n % i == 0) {
+                return false;
+               }
+          }
+            return true;
+        }
+  > The end of prime number
+  ***
     
