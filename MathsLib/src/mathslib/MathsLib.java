@@ -16,7 +16,6 @@ public class MathsLib {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        System.out.println("Try try try \n" + factorial(7));
     }
 // Factorial of any n! = n∗(n−1)∗(n−2)∗(n−3)∗...3∗2∗1
 
@@ -26,6 +25,24 @@ public class MathsLib {
         }
         return n * factorial(n - 1);
     }
-    // Combination of any 
+    // Combination of any
+
+    //Test form Even number
+    public static boolean evenNumber(int a) {
+        if (a > 0 && (a % 2) == 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    //Test for Odd number
+    public static boolean oddNumber(int a) {
+        if (a > 0 && (a % 2) != 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 
 }
