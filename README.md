@@ -53,4 +53,18 @@ A simple method to test is a number is even or not. It returs true if number is 
         }
   > The end of prime number
   ***
+  ## Fibonacci Series
+  > A simple method to display fibonnaci series
+  
+    public static void fibonacci(int n) {
+        int a = 0, b = 0, c = 1;
+        while (a < n) {
+            a = b;
+            b = c;
+            c = a + b;
+            System.out.println(a);
+        }
+    }
+  >The end of fibonacci series
+  ***
     
