@@ -16,7 +16,8 @@ public class MathsLib {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        System.out.println("Try try try \n" + primeTest(2));
+        System.out.println("Try try try \n");
+        fibonacci(10);
     }
 // Factorial of any n! = n∗(n−1)∗(n−2)∗(n−3)∗...3∗2∗1
 
@@ -57,6 +58,17 @@ public class MathsLib {
             }
         }
         return true;
+    }
+
+    //fibonacci series
+    public static void fibonacci(int n) {
+        int a = 0, b = 0, c = 1;
+        while (a < n) {
+            a = b;
+            b = c;
+            c = a + b;
+            System.out.println(a);
+        }
     }
 
 }
