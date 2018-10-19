@@ -16,10 +16,10 @@ public class MathsLib {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        System.out.println("Try try try \n");
-        fibonacci(10);
+        System.out.println("Try try try \n" + permutation(5, 3));
     }
 // Factorial of any n! = n∗(n−1)∗(n−2)∗(n−3)∗...3∗2∗1
+    //The recursive method
 
     public static long factorial(int n) {
         if (n == 0) {
@@ -27,7 +27,28 @@ public class MathsLib {
         }
         return n * factorial(n - 1);
     }
+
+    //The non recursive method
+    public static int factorial1(int n) {
+        int fact = 1;
+        for (int i = 1; i <= n; i++) {
+            fact = fact * i;
+        }
+        return fact;
+    }
+    //nPr = factorial(n) / factorial(n-r) Permutation
+
+    public static float permutation(int n, int r) {
+        float nPr = factorial(n) / factorial(n - r);
+        return nPr;
+    }
+
     // Combination of any
+    //nCr = factorial(n)/(factorial(n-r) * factorial(r)) combination
+    public static float combination(int n, int r) {
+        float nCr = factorial(n) / (factorial(r) * factorial(n - r));
+        return nCr;
+    }
 
     //Even numbers
     public static boolean evenNumber(int a) {
