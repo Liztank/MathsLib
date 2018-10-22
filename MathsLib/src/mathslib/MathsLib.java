@@ -28,7 +28,7 @@ public class MathsLib {
         return n * factorial(n - 1);
     }
 
-    //The non recursive method
+    //The iterartive method
     public static int factorial1(int n) {
         int fact = 1;
         for (int i = 1; i <= n; i++) {
@@ -36,15 +36,14 @@ public class MathsLib {
         }
         return fact;
     }
-    //nPr = factorial(n) / factorial(n-r) Permutation
+    //Permutation = nPr = factorial(n) / factorial(n-r)
 
     public static float permutation(int n, int r) {
         float nPr = factorial(n) / factorial(n - r);
         return nPr;
     }
 
-    // Combination of any
-    //nCr = factorial(n)/(factorial(n-r) * factorial(r)) combination
+    // Combination nCr = factorial(n)/(factorial(n-r) * factorial(r))
     public static float combination(int n, int r) {
         float nCr = factorial(n) / (factorial(r) * factorial(n - r));
         return nCr;
