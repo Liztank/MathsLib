@@ -10,7 +10,37 @@ Simple and short recursive function to calculate factorial of any given value us
         }
         return n * factorial(n - 1);
     }
-> The end of Factorial function
+    
+> Another way of calculating factorial without using recursion
+
+    public static int factorial(int n) {
+        int fact = 1;
+        for (int i = 1; i <= n; i++) {
+            fact = fact * i;
+        }
+        return fact;
+     }
+> The end of Factorial function using recursive method
+***
+ ## Permutation
+ Simple code to calculate the permutation (Refering to the factorial fucntions above).
+ > nPr = factorial(n) / factorial(n-r) Permutation
+ 
+       public static float permutation(int n, int r) {
+           float nPr = factorial(n) / factorial(n - r);
+            return nPr;
+        }
+ > The end of permutation
+ ***
+  ## Combination
+  Simple code to calculate the combination (Refering to the factorial fucntions above).
+  > nCr = factorial(n)/(factorial(n-r) * factorial(r))
+  
+        public static float combination(int n, int r) {
+           float nCr = factorial(n) / (factorial(r) * factorial(n - r));
+            return nCr;
+         }
+> The end of combination
 ***
 ## Even Number
 A simple method to test is a number is even or not. It returs true if number is even.
@@ -67,4 +97,3 @@ A simple method to test is a number is even or not. It returs true if number is 
     }
   >The end of fibonacci series
   ***
-    
